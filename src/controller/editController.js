@@ -34,25 +34,27 @@ class controller{
         //     })
     }
     post(req,res,next){
-        let items= req.body
-        let correct=true
-        if(items.json)for(var item of items.json){
-            let children= item.type
-            let checkList= children.map(e=>Object.values(e))
-            checkList.push(item.title)
-            if(!checkList.every(e=>antiHack(e))){
-                correct=false
-                break
+        if(check(req)){
+            let items= req.body
+            let correct=true
+            if(items.json)for(var item of items.json){
+                let children= item.type
+                let checkList= children.map(e=>Object.values(e))
+                checkList.push(item.title)
+                if(!checkList.every(e=>antiHack(e))){
+                    correct=false
+                    break
+                }
             }
-        }
-        else{
-            correct=false
-        }
-        if(correct){
-            if(Array.isArray(items.json))fs.writeFileSync(foodDir,JSON.stringify({list:items.json}))
-            res.send('success')
-        }else{
-            res.send("fail")
+            else{
+                correct=false
+            }
+            if(correct){
+                if(Array.isArray(items.json))fs.writeFileSync(foodDir,JSON.stringify({list:items.json}))
+                res.send('success')
+            }else{
+                res.send("fail")
+            }
         }
     }
     get(req,res,next){
