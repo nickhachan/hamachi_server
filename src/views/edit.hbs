@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="/src/css/edit.css">
+
+<form action="/edit/post" method="post">
+    <div class="container">
+        <h1 class="title">
+            welcome to edit page
+        </h1>
+        <div class="menu">
+            {{#each food}}
+                <div class="line dis-line"></div>
+                <div class="group group1">
+                    <button type="button" class="delete">X</button>
+                    <h2 class="title need-check" data-type="title" contenteditable="true">{{this.title}}</h2>
+                    {{#each this.type}}
+                            <div class="line dis-line"></div>
+                            <div class="food">
+                                <button type="button" class="delete">X</button>
+                                <div class="zone zone1">
+                                    <h2 class="name need-check" data-type="name" contenteditable="true">{{this.name}}</h2>
+                                    <h2 class="price">
+                                        <span class="need-check ml" data-type="offer" contenteditable="true" data-type="offer">{{this.offer}}</span>
+                                        <span class="need-check hl" data-type="price" contenteditable="true">{{this.price}}</span>
+                                        </h2>
+                                </div>
+                                <div class="zone zone2 need-check" data-type="description" contenteditable="true">{{this.description}}</div>
+                            </div>
+                    {{/each}}
+                    <div class="food clone">
+                            <button type="button" class="delete">X</button>
+                        <div class="zone zone1">
+                            <h2 class="name need-check" data-type="name" contenteditable="true">name</h2>
+                            <h2 class="price">
+                                <span class="need-check ml" data-type="offer" contenteditable="true">price </span>
+                                <span class="need-check hl" data-type="price" contenteditable="true">price </span>
+                                </h2>
+                        </div>
+                        <div class="zone zone2 need-check" data-type="description" contenteditable="true">description  </div>
+                        <div class="line dis-line"></div>
+                    </div>
+                </div>
+            {{/each}}
+            <div class="line dis-line"></div>
+            <div class="group group1 clone">
+                            <button type="button" class="delete">X</button>
+                    <h2 class="title need-check" data-type="title" contenteditable="true">Title</h2>
+                    <div class="line dis-line"></div>
+                    <div class="food">
+                            <button type="button" class="delete">X</button>
+                        <div class="zone zone1">
+                            <h2 class="name need-check" data-type="name" contenteditable="true">name</h2>
+                            <h2 class="price">
+                                <span class="need-check ml" data-type="offer" contenteditable="true">price</span>
+                                <span class="need-check hl" data-type="price" contenteditable="true">price</span>
+                                </h2>
+                        </div>
+                        <div class="zone zone2 need-check" data-type="description" contenteditable="true"></div>
+                    </div>
+                    <div class="line dis-line"></div>
+                    <div class="food clone">
+                            <button type="button" class="delete">X</button>
+                        <div class="zone zone1">
+                            <h2 class="name need-check" data-type="name" contenteditable="true">name</h2>
+                            <h2 class="price">
+                                <span class="need-check ml" data-type="offer" contenteditable="true">price </span>
+                                <span class="need-check hl" data-type="price" contenteditable="true">price </span>
+                                </h2>
+                        </div>
+                        <div class="zone zone2 need-check" data-type="description" contenteditable="true"></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="tool">
+        <button type="button" class="reset">reset</button>
+        <button type="button" class="undo">undo</button>
+        <button type="submit" class="submit">save change</button>
+    </div>
+    <div class="request disappear">
+        <h1 class="title">are you sure to make the change</h1>
+        <div class="btns">
+            <button class="accept" type="button">accept</button>
+            <button class="deny" type="button">deny</button>
+        </div>
+    </div>
+    <div class="div-blur"></div>
+</form>
+
+<script src="/src/js/edit.js"></script>

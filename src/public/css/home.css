@@ -1,0 +1,30 @@
+.loggin {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  padding: 20px 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px; }
+  .loggin .title {
+    font-size: 3em;
+    color: red;
+    text-align: center; }
+  .loggin .container {
+    text-align: center;
+    margin-top: 30px; }
+    .loggin .container .group {
+      display: flex;
+      margin-top: 10px; }
+      .loggin .container .group .sub-item {
+        margin-right: 10px;
+        font-size: 1.8em;
+        text-align: left; }
+      .loggin .container .group .sub-item {
+        width: 100%; }
+    .loggin .container .btn {
+      font-size: 2em;
+      margin-top: 20px;
+      padding: 10px 20px; }

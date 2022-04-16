@@ -1,0 +1,110 @@
+.container {
+  background: rgba(255, 255, 255, 0.651);
+  max-width: 700px;
+  padding: 20px 50px;
+  margin: 100px auto 150px; }
+  .container [contenteditable=true] {
+    padding: 0 5px; }
+    .container [contenteditable=true]:hover {
+      cursor: pointer;
+      opacity: 0.7;
+      background-color: white; }
+    .container [contenteditable=true]:focus {
+      background-color: white; }
+    .container [contenteditable=true]:empty:before {
+      content: attr(data-type);
+      color: grey;
+      font-style: italic; }
+  .container > .title {
+    font-size: 3.5em;
+    text-align: center; }
+  .container .line:not(*:first-child) {
+    margin-top: 20px; }
+  .container .border {
+    border: 1px solid black;
+    box-sizing: border-box; }
+  .container .line {
+    height: 2px;
+    width: 100%;
+    position: relative;
+    color: red;
+    background-color: red;
+    background-clip: content-box;
+    padding: 3px 0; }
+    .container .line::after {
+      content: '+';
+      font-size: 3rem;
+      display: block;
+      position: absolute;
+      left: -20px;
+      top: 0;
+      transform: translateY(-50%); }
+  .container .group {
+    font-size: 2em; }
+    .container .group > .title {
+      font-size: 2.5em;
+      margin-bottom: 0; }
+  .container .clone {
+    display: none; }
+  .container .zone {
+    display: flex;
+    justify-content: space-between; }
+    .container .zone > :hover {
+      opacity: 0.7; }
+    .container .zone .price {
+      position: relative; }
+      .container .zone .price .ml {
+        text-decoration: line-through;
+        font-size: .5em;
+        position: absolute;
+        top: -15px;
+        right: 0px;
+        width: max-content;
+        opacity: 0.8; }
+
+.dis-line {
+  opacity: 0; }
+
+.tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; }
+
+.disappear {
+  display: none !important; }
+
+.request {
+  background-color: white;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 20px; }
+  .request .title {
+    color: red;
+    padding: 30px 60px;
+    max-width: 70%; }
+  .request .btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px; }
+    .request .btns > * {
+      padding: 5px 10px; }
+
+*:not(.disappear) + .div-blur {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.295); }
