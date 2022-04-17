@@ -5,8 +5,10 @@ const schema= new Schema({
     type:[
         {
             name:String,
-            price:Number,
-            description:String
+            price:String,
+            offer:String,
+            description:String,
+            _id:String,
         }
     ],
     _id:Number

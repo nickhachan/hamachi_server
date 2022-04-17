@@ -32,11 +32,8 @@ window.onload=()=>{
         console.log(last.pos)
         window.scrollTo(0,last.pos)
     }
-    function toggleRequest(){
-        checkBox.classList.toggle('disappear')
-    }
     function getData(){
-        let rawData= $$('*:not(.clone)>*:not(.clone)>.need-check')
+        let rawData= $$('.group:not(.clone) .food:not(.clone) .need-check')
         let data=[]
         let dataFormat={
             "title":"",

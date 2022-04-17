@@ -7,8 +7,12 @@ const hbs= require('express-handlebars')
 const path= require('path')
 const connection= require('./src/mongodb/connection')
 
+<<<<<<< HEAD
 
 //connection()
+=======
+connection()
+>>>>>>> e5b71aefd6df5cdba96c1627a6d54108844eeb32
 
 app.use('/src',express.static(path.join(__dirname,'src','public')))
 
