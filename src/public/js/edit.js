@@ -30,13 +30,11 @@ window.onload=()=>{
     undo.onclick=e=>{
         let last= history.pop()
         menu.innerHTML=last.content
-        console.log(last.pos)
         window.scrollTo(0,last.pos)
     }
     function getData(){
         let rawData= $$('.group:not(.clone)>.food:not(.clone) .need-check,.group:not(.clone)>.title')
         let data=[]
-        console.log(rawData)
         let dataFormat={
             "title":"",
             "type":[]
@@ -64,6 +62,7 @@ window.onload=()=>{
                     child.title=content
             }
         }
+        data.push(child)
         return data
     }
     function validateData(data){
@@ -73,7 +72,6 @@ window.onload=()=>{
     
     acceptBtn.onclick=()=>{
         let data= {json:getData(),key:$('#info').innerText}
-        console.log(data)
         toggle(checkBox,'disappear')
         if(validateData(data)){
             fetch(window.location.href+'/post',{

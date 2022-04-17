@@ -4,39 +4,39 @@
         "type": [
             {
                 "name": "Aaloo samosa",
-                "offer": "",
                 "price": "20kr",
-                "description": ""
+                "description": "\n                                \n                            ",
+                "offer": ""
             },
             {
                 "name": "Qeema samosa",
-                "offer": "",
                 "price": "29kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Chana chat",
-                "offer": "",
                 "price": "40kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Fruit chat",
-                "offer": "",
                 "price": "40kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Samosa chat",
-                "offer": "",
                 "price": "55kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Dahi pakori",
-                "offer": "",
                 "price": "55kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             }
         ]
     },
@@ -45,33 +45,33 @@
         "type": [
             {
                 "name": "Paye",
-                "offer": "",
                 "price": "179kr",
-                "description": "Paye med naan"
+                "description": "\n                                Paye med naan\n                            ",
+                "offer": ""
             },
             {
                 "name": "Halwa Poori",
-                "offer": "",
                 "price": "99kr",
-                "description": "med chana, halwa og poori"
+                "description": "med chana, halwa og poori",
+                "offer": ""
             },
             {
                 "name": "Egg chana",
-                "offer": "",
                 "price": "129kr",
-                "description": "Chana med egg serveres med nan"
+                "description": "Chana med egg serveres med nan",
+                "offer": ""
             },
             {
                 "name": "Kylling chana",
-                "offer": "",
                 "price": "149kr",
-                "description": "Chana med kylling"
+                "description": "Chana med kylling",
+                "offer": ""
             },
             {
                 "name": "Lam paya",
-                "offer": "",
                 "price": "179kr",
-                "description": "severes med nan"
+                "description": "severes med nan",
+                "offer": ""
             }
         ]
     },
@@ -80,45 +80,45 @@
         "type": [
             {
                 "name": "Kylling Biryani",
-                "offer": "",
                 "price": "149kr",
-                "description": "kylling, ris, krydder og serveres med spinat"
+                "description": "\n                                kylling, ris, krydder og serveres med spinat\n                            ",
+                "offer": ""
             },
             {
-                "name": "Kylling Karahi",
-                "offer": "",
+                "name": "Kylling Karahi ",
                 "price": "164kr",
-                "description": "Kylling, Løk, tomat og saus"
+                "description": "\n                                Kylling, Løk, tomat og saus\n                            ",
+                "offer": ""
             },
             {
                 "name": "Kylling curry",
-                "offer": "",
                 "price": "149kr",
-                "description": "Kylling og Curry saus"
+                "description": "\n                                Kylling og Curry saus\n                            ",
+                "offer": ""
             },
             {
                 "name": "Kylling Achari",
-                "offer": "",
                 "price": "164kr",
-                "description": "Kylling, Achari Masala, yoghurt og tomat saus"
+                "description": "\n                                Kylling, Achari Masala, yoghurt og tomat saus\n                            ",
+                "offer": ""
             },
             {
                 "name": "Kylling Handi",
-                "offer": "",
                 "price": "154kr",
-                "description": "Kylling og Tomato puree"
+                "description": "\n                                Kylling og Tomato puree\n                            ",
+                "offer": ""
             },
             {
                 "name": "Hvit Kylling Qourma",
-                "offer": "",
                 "price": "149kr",
-                "description": "Kylling, yoghurt og romme"
+                "description": "\n                                Kylling, yoghurt og romme\n                            ",
+                "offer": ""
             },
             {
                 "name": "Kylling Spinat (Palak)",
-                "offer": "",
                 "price": "144kr",
-                "description": "Kylling med spinat"
+                "description": "\n                                Kylling med spinat\n                            ",
+                "offer": ""
             }
         ]
     },
@@ -127,39 +127,39 @@
         "type": [
             {
                 "name": "Biff Nihari",
-                "offer": "",
                 "price": "164kr",
-                "description": "biff med saus"
+                "description": "\n                                biff med saus\n                            ",
+                "offer": ""
             },
             {
-                "name": "Lam Karahi",
-                "offer": "",
+                "name": "Lam Karahi ",
                 "price": "169kr",
-                "description": "Lam-løk med tomatsaus"
+                "description": "\n                                Lam-løk med tomatsaus\n                            ",
+                "offer": ""
             },
             {
                 "name": "Lam Qourma",
-                "offer": "",
                 "price": "149kr",
-                "description": "Lam, løk, yoghurt med tomatsa"
+                "description": "\n                                Lam, løk, yoghurt med tomatsa\n                            ",
+                "offer": ""
             },
             {
                 "name": "Lam Handi",
-                "offer": "",
                 "price": "169kr",
-                "description": "Lam, tomato puree"
+                "description": "\n                                Lam, tomato puree\n                            ",
+                "offer": ""
             },
             {
-                "name": "Lam Pulao",
-                "offer": "",
-                "price": "149kr\n99kr",
-                "description": "lam med ris"
+                "name": "Lam Pulao ",
+                "price": "99kr",
+                "description": "\n                                lam med ris\n                            ",
+                "offer": "149kr"
             },
             {
                 "name": "Lam Spinat",
-                "offer": "",
                 "price": "159kr",
-                "description": "Lam, løk, yoghurt med tomatsa"
+                "description": "\n                                Lam, løk, yoghurt med tomatsa\n                            ",
+                "offer": ""
             }
         ]
     },
@@ -168,15 +168,15 @@
         "type": [
             {
                 "name": "Palak Paneer",
-                "offer": "",
                 "price": "129kr",
-                "description": "spinat med fetta ost"
+                "description": "\n                                spinat med fetta ost\n                            ",
+                "offer": ""
             },
             {
                 "name": "Shahi Chana",
-                "offer": "",
                 "price": "129kr",
-                "description": "chana"
+                "description": "chana",
+                "offer": ""
             }
         ]
     },
@@ -184,34 +184,34 @@
         "title": "Chinese Retter",
         "type": [
             {
-                "name": "Kylling Manchurian",
-                "offer": "",
+                "name": "Kylling Manchurian ",
                 "price": "129kr",
-                "description": "Kylling biter med tomatsaus (vegetar ris)"
+                "description": "\n                                Kylling biter med tomatsaus (vegetar ris)\n                            ",
+                "offer": ""
             },
             {
                 "name": "Kylling med grønnsaker",
-                "offer": "",
                 "price": "129kr",
-                "description": "Kylling og grønnsaker"
+                "description": "\n                                Kylling og grønnsaker\n                            ",
+                "offer": ""
             },
             {
                 "name": "Reker med stekte grønnsakerr",
-                "offer": "",
                 "price": "149kr",
-                "description": "Reker og grønnsaker"
+                "description": "\n                                Reker og grønnsaker\n                            ",
+                "offer": ""
             },
             {
                 "name": "Kylling Chowmein (nudler)",
-                "offer": "",
                 "price": "129kr",
-                "description": "kylling og nudler med grønnsaker"
+                "description": "\n                                kylling og nudler med grønnsaker\n                            ",
+                "offer": ""
             },
             {
                 "name": "Reker Chowmein (nudler)",
-                "offer": "",
                 "price": "149kr",
-                "description": "reker og nudler med grønnsaker"
+                "description": "\n                                reker og nudler med grønnsaker\n                            ",
+                "offer": ""
             }
         ]
     },
@@ -220,33 +220,33 @@
         "type": [
             {
                 "name": "Mix grill",
-                "offer": "",
                 "price": "229kr",
-                "description": "Kylling, biff og kebab"
+                "description": "\n                                Kylling, biff og kebab\n                            ",
+                "offer": ""
             },
             {
                 "name": "Lammekoteletter",
-                "offer": "",
                 "price": "239kr",
-                "description": "lam"
+                "description": "lam",
+                "offer": ""
             },
             {
                 "name": "Kylling tandoori",
-                "offer": "",
                 "price": "149kr",
-                "description": "krydret Kylling lår/bryst med ris"
+                "description": "krydret Kylling lår/bryst med ris",
+                "offer": ""
             },
             {
                 "name": "Seekh kebab",
-                "offer": "",
                 "price": "129kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Stekt fisk",
-                "offer": "",
                 "price": "139kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             }
         ]
     },
@@ -255,27 +255,27 @@
         "type": [
             {
                 "name": "Kylling Pizza",
-                "offer": "",
                 "price": "179kr",
-                "description": "kylling med løk, paprika, champagne og oliver"
+                "description": "\n                                kylling med løk, paprika, champagne og oliver\n                            ",
+                "offer": ""
             },
             {
                 "name": "Biff Pizza",
-                "offer": "",
                 "price": "199kr",
-                "description": "biff med løk, paprika, champagne ogoliver"
+                "description": "\n                                biff med løk, paprika, champagne ogoliver\n                            ",
+                "offer": ""
             },
             {
                 "name": "Reker Pizza",
-                "offer": "",
                 "price": "219kr",
-                "description": "reker med løk, paprika, champagne og oliver"
+                "description": "\n                                reker med løk, paprika, champagne og oliver\n                            ",
+                "offer": ""
             },
             {
-                "name": "Vegetar Pizza",
-                "offer": "",
+                "name": "Vegetar Pizza ",
                 "price": "139kr",
-                "description": "løk, paprika, champagne og oliver"
+                "description": "\n                                løk, paprika, champagne og oliver\n                            ",
+                "offer": ""
             }
         ]
     },
@@ -284,51 +284,51 @@
         "type": [
             {
                 "name": "Kebab i Pita",
-                "offer": "",
                 "price": "79kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Kylling Kebab i Pita",
-                "offer": "",
                 "price": "89kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Kylling Kebab i Tallerken",
-                "offer": "",
                 "price": "129kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Kylling Shawarma",
-                "offer": "",
                 "price": "109kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Zinger Shawarma",
-                "offer": "",
                 "price": "119kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Burrito",
-                "offer": "",
                 "price": "119kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Pommes frites",
-                "offer": "",
                 "price": "29kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Loaded Chicken fries",
-                "offer": "",
                 "price": "129kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             }
         ]
     },
@@ -337,9 +337,9 @@
         "type": [
             {
                 "name": "Kylling Vinger meny (10stk/15stk/30stk)",
-                "offer": "",
                 "price": "115kr /159kr /299kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             }
         ]
     },
@@ -348,15 +348,15 @@
         "type": [
             {
                 "name": "Kylling burger (Tallerken)",
-                "offer": "",
                 "price": "79kr /119kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "hamburger (Tallerken)",
-                "offer": "",
                 "price": "89kr /129kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             }
         ]
     },
@@ -365,33 +365,33 @@
         "type": [
             {
                 "name": "Arabisk Ris (for 6 personer)",
-                "offer": "",
                 "price": "999kr",
-                "description": "en hel lammelår, ris mandler og salat (nøtter)"
+                "description": "\n                                en hel lammelår, ris mandler og salat (nøtter)\n                            ",
+                "offer": ""
             },
             {
                 "name": "Arabisk ris portion",
-                "offer": "",
                 "price": "199kr",
-                "description": "lammelår, ris mandler og salat (nøtter)"
+                "description": "\n                                lammelår, ris mandler og salat (nøtter)\n                            ",
+                "offer": ""
             },
             {
                 "name": "Kylling steak",
-                "offer": "",
                 "price": "159kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Biff steak",
-                "offer": "",
                 "price": "179kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Gol Gappy (6 stk.)",
-                "offer": "",
                 "price": "119kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             }
         ]
     },
@@ -400,27 +400,27 @@
         "type": [
             {
                 "name": "Sada Naan",
-                "offer": "",
                 "price": "15kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Kalwanji/Seasame Naan",
-                "offer": "",
                 "price": "19kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Potet Naan",
-                "offer": "",
                 "price": "35kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Qeema Naan",
-                "offer": "",
                 "price": "69kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             }
         ]
     },
@@ -429,15 +429,86 @@
         "type": [
             {
                 "name": "Firni",
-                "offer": "",
                 "price": "39kr",
-                "description": ""
+                "description": "",
+                "offer": ""
             },
             {
                 "name": "Gajar Halwa",
-                "offer": "",
                 "price": "54kr",
-                "description": ""
+                "description": "",
+                "offer": ""
+            }
+        ]
+    },
+    {
+        "title": "Drikker",
+        "type": [
+            {
+                "name": "Cola (0.5l /1.5l)",
+                "price": "49kr /59kr",
+                "description": "",
+                "offer": ""
+            },
+            {
+                "name": "Cola utan sukker (0.5l /1.5l)",
+                "price": "49kr /59kr",
+                "description": "",
+                "offer": ""
+            },
+            {
+                "name": "Sprite (0.5l /1.5l)",
+                "price": "49kr /59kr",
+                "description": "",
+                "offer": ""
+            },
+            {
+                "name": "Dew 0.5l",
+                "price": "49kr",
+                "description": "",
+                "offer": ""
+            },
+            {
+                "name": "Fanta exotic (0.5l /1.5l)",
+                "price": "49kr /59kr",
+                "description": "",
+                "offer": ""
+            },
+            {
+                "name": "Monster",
+                "price": "49kr",
+                "description": "",
+                "offer": ""
+            },
+            {
+                "name": "Mango Lassi",
+                "price": "35kr",
+                "description": "",
+                "offer": ""
+            },
+            {
+                "name": "Cold coffee with ice cream",
+                "price": "69kr",
+                "description": "",
+                "offer": ""
+            },
+            {
+                "name": "lassi",
+                "price": "25kr",
+                "description": "",
+                "offer": ""
+            },
+            {
+                "name": "Kashmiri Te",
+                "price": "39kr",
+                "description": "",
+                "offer": ""
+            },
+            {
+                "name": "Pakistansk Spesiel Te",
+                "price": "29kr",
+                "description": "",
+                "offer": ""
             }
         ]
     }
