@@ -41,14 +41,6 @@ class controller{
             else{
                 correct=false
             }
-<<<<<<< HEAD
-            if(correct){
-                if(Array.isArray(items.json))fs.writeFileSync(foodDir,JSON.stringify({list:items.json}))
-                res.send('success')
-            }else{
-                res.send("fail")
-            }
-=======
         }
         else{
             correct=false
@@ -63,7 +55,6 @@ class controller{
             }
         }else{
             res.send("fail")
->>>>>>> e5b71aefd6df5cdba96c1627a6d54108844eeb32
         }
     }
     get(req,res){
