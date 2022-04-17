@@ -1,8 +1,11 @@
 .container{
     background: rgba(255, 255, 255, 0.651);
-    max-width: 700px;
+    max-width: 800px;
     padding: 20px 50px;
     margin: 100px auto 150px;
+    .changed{
+        background-color: rgb(255, 255, 255);
+    }
     [contenteditable=true]{
         padding: 0 5px;
         &:hover{
@@ -56,7 +59,9 @@
             font-size: 2.5em;
             margin-bottom: 0;
         }
-        
+        .food{
+            padding: 0 30px;
+        }
     }
     .clone{
         display: none;
@@ -125,7 +130,7 @@
 }
 *:not(.disappear)+.div-blur{
     display: block;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;

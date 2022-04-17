@@ -15,6 +15,7 @@ window.onload=()=>{
     const denyBtn=$('.deny')
     const acceptBtn=$('.accept')
     const undo=$('.undo')
+    const addHistory=()=>history.push({content:menu.innerHTML,pos:window.scrollY})
     function toggle(parent,classname){
         parent.classList.toggle(classname)
     }
@@ -33,8 +34,9 @@ window.onload=()=>{
         window.scrollTo(0,last.pos)
     }
     function getData(){
-        let rawData= $$('.group:not(.clone) .food:not(.clone) .need-check')
+        let rawData= $$('.group:not(.clone)>.food:not(.clone) .need-check,.group:not(.clone)>.title')
         let data=[]
+        console.log(rawData)
         let dataFormat={
             "title":"",
             "type":[]
@@ -47,19 +49,19 @@ window.onload=()=>{
             let content=i.innerHTML.trim()
             if(child){
                 if(type=='title'){
+                    data.push(child)
                     child=initFormat()
                     child.title=content
                 }else if(type=='description'){
                     typeGroup[type]=content
                     child.type.push(typeGroup)
-                    data.push(child)
                     typeGroup={}
                 }else{
                     typeGroup[type]=content
                 }
             }else{
-                child=initFormat()
-                child.title=content
+                    child=initFormat()
+                    child.title=content
             }
         }
         return data
@@ -70,7 +72,8 @@ window.onload=()=>{
     
     
     acceptBtn.onclick=()=>{
-        let data= {json:getData()}
+        let data= {json:getData(),key:$('#info').innerText}
+        console.log(data)
         toggle(checkBox,'disappear')
         if(validateData(data)){
             fetch(window.location.href+'/post',{
@@ -83,7 +86,7 @@ window.onload=()=>{
                   // 'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 redirect: 'follow', // manual, *follow, error
-                referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                referrerPolicy: 'origin', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
                 body: JSON.stringify(data) // body data type must match "Content-Type" header
               })
         }
@@ -102,13 +105,26 @@ window.onload=()=>{
         let l=line()
         l.forEach(e=>{
             e.name.onclick=()=>{
-                history.push({content:menu.innerHTML,pos:window.scrollY})
+                addHistory()
                 let clone= getClone(e.name)
                 e.name.classList.add('dis-line')
                 clone.classList.remove('clone')
                 e.name.insertAdjacentElement('beforebegin',lineClone())
                 e.name.insertAdjacentElement('beforebegin',clone)
                 renewedLine()
+            }
+        })
+        $$('.need-check').forEach(e=>{
+            e.onfocus=(e2)=>{
+                e2.target.classList.add('changed')
+                if(!e2.target.dataset.content)e2.target.dataset.content=e2.target.innerText
+            }
+            e.onblur=(e2)=>{
+                if(e2.target.dataset.content==e2.target.innerText){
+                    e2.target.classList.remove('changed')
+                }else{
+                    addHistory()
+                }
             }
         })
         deleteBtn().forEach(e=>{
@@ -121,7 +137,7 @@ window.onload=()=>{
             }
             e.onclick=(e)=>{
                 toggle(e.target.parentNode,'border')
-                history.push({content:menu.innerHTML,pos:window.scrollY})
+                addHistory()
                 let parent=e.target.parentNode
                 let parentFriends=[...parent.parentNode.children]
                 let parentBestFriend=parentFriends[parentFriends.indexOf(parent)-1]

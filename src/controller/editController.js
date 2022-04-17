@@ -1,7 +1,11 @@
 const admin= require('../admin/key')
 const model= require('../model/food')
 const foodDir=__dirname+'/../database/food.json'
-const fs= require('fs')
+const url =require('url')
+let key="dsadsafcdvi2yvek13giu32@me12"
+const rand=()=>Math.random(0).toString(36).substr(2);
+const token=(length)=>(rand()+rand()+rand()+rand()).substr(0,length);
+key=token(40)
 function check(req){
     let info= req.body
     return Object.values(info).every(e=>antiHack(e))
@@ -18,7 +22,8 @@ class controller{
             .then(e=>{
                 if(check(req)){
                     res.render('edit',{
-                        food:e.map(e=>e.toObject())
+                        food:e.map(e=>e.toObject()),
+                        key:key
                     })
                 }else{
                     res.redirect('http://'+req.headers.host)
@@ -26,9 +31,16 @@ class controller{
             })
     }
     post(req,res,next){
-        if(check(req)){
-            let items= req.body
-            let correct=true
+        let correct=true
+        var ref = req.headers.referer;
+        console.log(ref)
+        if(!ref){
+            res.send(403,"invalid")
+            return
+        }
+        let u = url.parse(ref);
+        let items= req.body
+        if(u && u.hostname === 'localhost'&&req.body.fixKey==key){
             if(items.json)for(var item of items.json){
                 let children= item.type
                 let checkList= children.map(e=>Object.values(e))
@@ -41,20 +53,19 @@ class controller{
             else{
                 correct=false
             }
-        }
-        else{
-            correct=false
-        }
-        if(correct){
-            if(Array.isArray(items.json)){
-                model.collection.deleteMany({})
-                model.collection.insertMany(items.json)
-                .then(e=>{        
-                    res.send('success')
-                })
+            if(correct){
+                if(Array.isArray(items.json)){
+                    model.collection.deleteMany({})
+                    model.collection.insertMany(items.json)
+                    .then(e=>{        
+                        res.send('success')
+                    })
+                }
+            }else{
+                res.send("fail")
             }
         }else{
-            res.send("fail")
+            res.send('fail')
         }
     }
     get(req,res){

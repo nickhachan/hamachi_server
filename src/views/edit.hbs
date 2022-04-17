@@ -25,7 +25,7 @@
                                 <div class="zone zone2 need-check" data-type="description" contenteditable="true">{{this.description}}</div>
                             </div>
                     {{/each}}
-                    <div class="food clone">
+                    <div class="food clone changed">
                             <button type="button" class="delete">X</button>
                         <div class="zone zone1">
                             <h2 class="name need-check" data-type="name" contenteditable="true"></h2>
@@ -40,7 +40,7 @@
                 </div>
             {{/each}}
             <div class="line dis-line"></div>
-            <div class="group group1 clone">
+            <div class="group group1 clone changed">
                             <button type="button" class="delete">X</button>
                     <h2 class="title need-check" data-type="title" contenteditable="true"></h2>
                     <div class="line dis-line"></div>
@@ -56,7 +56,7 @@
                         <div class="zone zone2 need-check" data-type="description" contenteditable="true"></div>
                     </div>
                     <div class="line dis-line"></div>
-                    <div class="food clone">
+                    <div class="food clone changed">
                             <button type="button" class="delete">X</button>
                         <div class="zone zone1">
                             <h2 class="name need-check" data-type="name" contenteditable="true"></h2>
@@ -69,6 +69,7 @@
                     </div>
                 </div>
         </div>
+        <div id="info" style="display: none;">{{key}}</div>
     </div>
     <div class="tool">
         <button type="button" class="reset">reset</button>
