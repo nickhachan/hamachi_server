@@ -19,7 +19,7 @@ app.set('view engine','hbs')
 app.set('views','./src/views')
 
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true , limit:"5mb"}))
 app.use(cors())
 route(app)
 
