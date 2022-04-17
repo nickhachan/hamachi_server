@@ -26,15 +26,20 @@ class controller{
             })
     }
     post(req,res,next){
-        let items= req.body
-        let correct=true
-        if(items.json)for(var item of items.json){
-            let children= item.type
-            let checkList= children.map(e=>Object.values(e))
-            checkList.push(item.title)
-            if(!checkList.every(e=>antiHack(e))){
+        if(check(req)){
+            let items= req.body
+            let correct=true
+            if(items.json)for(var item of items.json){
+                let children= item.type
+                let checkList= children.map(e=>Object.values(e))
+                checkList.push(item.title)
+                if(!checkList.every(e=>antiHack(e))){
+                    correct=false
+                    break
+                }
+            }
+            else{
                 correct=false
-                break
             }
         }
         else{
