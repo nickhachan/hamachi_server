@@ -33,14 +33,13 @@ class controller{
     post(req,res,next){
         let correct=true
         var ref = req.headers.referer;
-        console.log(ref)
         if(!ref){
             res.send(403,"invalid")
             return
         }
         let u = url.parse(ref);
         let items= req.body
-        if(u && u.hostname === 'localhost'&&req.body.fixKey==key){
+        if(u && u.hostname === 'foodvilla-server.herokuapp.com'&&req.body.fixKey==key){
             if(items.json)for(var item of items.json){
                 let children= item.type
                 let checkList= children.map(e=>Object.values(e))
