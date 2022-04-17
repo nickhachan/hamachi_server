@@ -37,6 +37,9 @@
         background-color: red;
         background-clip: content-box;
         padding: 3px 0;
+        &:hover{
+            cursor: pointer;
+        }
         &::after{
             content: '+';
             font-size: 3rem;

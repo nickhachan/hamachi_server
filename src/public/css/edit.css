@@ -31,6 +31,8 @@
     background-color: red;
     background-clip: content-box;
     padding: 3px 0; }
+    .container .line:hover {
+      cursor: pointer; }
     .container .line::after {
       content: '+';
       font-size: 3rem;

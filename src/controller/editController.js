@@ -1,7 +1,6 @@
 const admin= require('../admin/key')
 const model= require('../model/food')
 const foodDir=__dirname+'/../database/food.json'
-const getFood= ()=>require(foodDir).list
 const fs= require('fs')
 function check(req){
     let info= req.body
@@ -15,23 +14,16 @@ function antiHack(e){
 
 class controller{
     index(req,res){
-        if(check(req)){
-            res.render('edit',{
-                food:getFood()
+        model.find({})
+            .then(e=>{
+                if(check(req)){
+                    res.render('edit',{
+                        food:e.map(e=>e.toObject())
+                    })
+                }else{
+                    res.redirect('http://'+req.headers.host)
+                }
             })
-        }else{
-            res.redirect('http://'+req.headers.host)
-        }
-        // model.find({})
-        //     .then(e=>{
-        //         if(check(req)){
-        //             res.render('edit',{
-        //                 food:e.map(e=>e.toObject())
-        //             })
-        //         }else{
-        //             res.redirect('http://'+req.headers.host)
-        //         }
-        //     })
     }
     post(req,res,next){
         let items= req.body
@@ -49,14 +41,22 @@ class controller{
             correct=false
         }
         if(correct){
-            if(Array.isArray(items.json))fs.writeFileSync(foodDir,JSON.stringify({list:items.json}))
-            res.send('success')
+            if(Array.isArray(items.json)){
+                model.collection.deleteMany({})
+                model.collection.insertMany(items.json)
+                .then(e=>{        
+                    res.send('success')
+                })
+            }
         }else{
             res.send("fail")
         }
     }
-    get(req,res,next){
-        if(req.headers.href.match(/$https:\/\/foodvilla.no/))res.send(JSON.stringify(getFood()))
+    get(req,res){
+        model.find({})
+            .then(e=>{
+                res.send(JSON.stringify(e))
+            })
     }
 }
 module.exports= new controller()
