@@ -4,6 +4,7 @@ require('dotenv').config()
 const port = process.env.PORT || 5000
 const route= require('./src/route/router')
 const hbs= require('express-handlebars')
+const cors= require('cors')
 const path= require('path')
 const connection= require('./src/mongodb/connection')
 
@@ -19,6 +20,7 @@ app.set('views','./src/views')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(cors())
 route(app)
 
 app.listen(port , ()=> console.log('> Server is up and running on port : ' + port))
